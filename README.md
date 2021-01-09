@@ -44,3 +44,4 @@ CMD ["python", "flask_app.py"]
 
 Building an image starting with the Python 3.10 image. Add the current directory . into the path /code in the image.
 Set the working directory to /code. Install the Python dependencies. Set the default command for the container to python flask_app.py.
+ 
