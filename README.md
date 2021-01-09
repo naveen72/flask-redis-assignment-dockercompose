@@ -6,7 +6,7 @@ Ingress on port 22(SSH ACCESS), 5000(To access Flask Webapp) should be allowed i
 
 Setup:Setup
 =================
-
+'''
 Create one directory on linux server for this activity. 
 ubuntu@ip-172-31-20-149:$ mkdir docker-compose-assignment 
 ubuntu@ip-172-31-20-149:$ cd docker-compose-assignment/
@@ -26,7 +26,7 @@ def hello():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
-
+'''
 In this code, redis is the hostname of the redis container on the application’s network. We use the default port for Redis, 6379.
 
 Step: 2 Create a Dockerfile
