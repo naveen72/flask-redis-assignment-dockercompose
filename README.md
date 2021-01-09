@@ -30,6 +30,13 @@ if __name__ == "__main__":
 In this code, redis is the hostname of the redis container on the application’s network.
 We use the default port for Redis, 6379.
 
+FROM python:3.4-alpine
+ADD . /code
+WORKDIR /code
+RUN pip install -r requirements.txt
+CMD ["python", "app.py"]
+This tells Docker to:
+
 Step: 2 Create a Dockerfile
 ===========================
 
