@@ -161,4 +161,4 @@ fb4ded28011a        dockercomposeassignment_web   "python flask_app.py"    4 hou
 399e1886c6df        redis:alpine                  "docker-entrypoint.s…"   4 hours ago         Exited (0) 4 hours ago                            dockercomposeassignment_redis_1
 ubuntu@ip-172-31-20-149:~/test$ ^C
 
-At this point, you have seen the basics of how Compose works. 
+At this point, you have seen the basics of how Compose works . 
