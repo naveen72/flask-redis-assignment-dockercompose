@@ -1,6 +1,6 @@
 Flask Webapp - Redis storage deployment by Docker swarm
-Pre-requisites:
 
+Pre-requisites:
 Docker and Docker compose should be installed on one linux server where this deployment needs to be done.
 Ingress on port 22(SSH ACCESS), 5000(To access Flask Webapp) should be allowed in this linux server.
 
