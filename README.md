@@ -162,4 +162,13 @@ fb4ded28011a        dockercomposeassignment_web   "python flask_app.py"    4 hou
 399e1886c6df        redis:alpine                  "docker-entrypoint.s…"   4 hours ago         Exited (0) 4 hours ago                            dockercomposeassignment_redis_1
 ubuntu@ip-172-31-20-149:~/test$ ^C
 ```
+If we start Compose with docker-compose up -d, we’ll probably want to stop our services once we’ve finished with them:
+
+```$ docker-compose stop```
+
+we can bring everything down, removing the containers entirely, with the down command. Pass --volumes to also remove the data volume used by the Redis container:
+
+```$ docker-compose down --volumes```
+
+
 At this point, you have seen the basics of how Compose works.
