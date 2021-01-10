@@ -137,3 +137,29 @@ web_1    |  * Debugger is active!
 web_1    |  * Debugger PIN: 280-211-975
 
 ```
+Compose pulls a Redis image, builds an image for your code, and start the services you defined. 
+In this case, the code is statically copied into the image at build time.
+
+2. Enter http://<ip_of_server>:5000/ in a browser to see the application running.
+
+You should see a message in your browser saying:
+
+```Hello NClouds! I have been seen 1 times. ```
+
+3. Refresh the page.
+
+The number should increment.
+
+```Hello NClouds! I have been seen 2 times. ```
+
+4. Switch to another terminal window, and type docker image ls to list local images.
+```
+ubuntu@ip-172-31-20-149:~/test$ docker ps -a
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                   PORTS                    NAMES
+ce4362dc6ed2        test_web                      "python flask_app.py"    5 minutes ago       Up 5 minutes             0.0.0.0:5000->5000/tcp   test_web_1
+fe41724be078        redis:alpine                  "docker-entrypoint.s…"   5 minutes ago       Up 5 minutes             6379/tcp                 test_redis_1
+fb4ded28011a        dockercomposeassignment_web   "python flask_app.py"    4 hours ago         Exited (0) 4 hours ago                            dockercomposeassignment_web_1
+399e1886c6df        redis:alpine                  "docker-entrypoint.s…"   4 hours ago         Exited (0) 4 hours ago                            dockercomposeassignment_redis_1
+ubuntu@ip-172-31-20-149:~/test$ ^C
+```
+At this point, you have seen the basics of how Compose works.
