@@ -171,4 +171,4 @@ we can bring everything down, removing the containers entirely, with the down co
 ```$ docker-compose down --volumes```
 
 
-At this point, you have seen the basics of how Compose works.
+This is the way, how we deploy multi-tier application via docker compose.
